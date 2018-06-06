@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-
 const uniqueValidator = require('mongoose-unique-validator');
 
 
@@ -45,7 +44,7 @@ let usuarioSchema = new Schema({
     }
 });
 
-//Esto se hace para que cuando enviemos el password, este no se muestre por pantalla
+
 usuarioSchema.methods.toJSON = function() {
 
     let user = this;
